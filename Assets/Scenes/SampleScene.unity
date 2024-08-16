@@ -415,10 +415,10 @@ MonoBehaviour:
   m_JumpForce: 400
   m_CrouchSpeed: 0.5
   m_MovementSmoothing: 0.05
-  m_AirControl: 0
+  m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 183
+    m_Bits: 256
   m_GroundCheck: {fileID: 698287329}
   m_CeilingCheck: {fileID: 537312718}
   m_CrouchDisableCollider: {fileID: 1711671792}
@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 1732017705}
   - component: {fileID: 1732017704}
   - component: {fileID: 1732017703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
