@@ -43,11 +43,5 @@ public class PlayerMovement : MonoBehaviour
     public void OnCrouching(bool isCrouching2){
         animator.SetBool("IsCrouching",isCrouching2);
     }
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.gameObject.CompareTag("Rocket"))
-    //     {
-    //         Debug.Log("Player got hit by the rocket!");
-    //     }
-    // }
+    
 }
