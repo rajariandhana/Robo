@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9792846e93495d94fbf7b75a9a4ee8b4
+guid: fa7b3a7247b604d439690988fb06e8af
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,91 +117,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EntitySheet1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 24
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8ba43aa88a0918448065658e5267298
-      internalID: 794695313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EntitySheet1_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ba65f616a862e74d965d79c47547c3a
-      internalID: -1480491501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EntitySheet1_2
+      name: Blade_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 0
+        y: 18
         width: 12
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1d8a38250fee0b478fc93d8e8abeeba
-      internalID: 1006554798
+      spriteID: 55c7b410c8f788a428093616598a2da2
+      internalID: -594650774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EntitySheet1_3
+      name: Blade_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 3
-        width: 10
-        height: 8
+        x: 18
+        y: 18
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1888114ffbb830469306e4bc89e4c1f
-      internalID: -920778190
+      spriteID: 1d5594320b5d047498901d842db456eb
+      internalID: -163651310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EntitySheet1_4
+      name: Blade_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 18
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f03d47a001abc4ead5ee77c9286263
+      internalID: 332336516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a87cf21699eceb4a83f8b74a09f0a90
+      internalID: 2018964359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b549518ec492404fb3084b242b27043
+      internalID: -705885077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_5
       rect:
         serializedVersion: 2
         x: 34
@@ -209,14 +230,14 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb72f798ca42dcb4bb87fd3adf8a0a16
-      internalID: 1081526424
+      spriteID: a83613fa20b6ee847a41be830ef476fc
+      internalID: 1528359707
       vertices: []
       indices: 
       edges: []
@@ -232,11 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      EntitySheet1_1: -1480491501
-      EntitySheet1_3: -920778190
-      EntitySheet1_4: 1081526424
-      EntitySheet1_0: 794695313
-      EntitySheet1_2: 1006554798
+      Blade_1: -163651310
+      Blade_0: -594650774
+      Blade_3: 2018964359
+      Blade_4: -705885077
+      Blade_2: 332336516
+      Blade_5: 1528359707
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

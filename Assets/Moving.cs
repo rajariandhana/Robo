@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Moving : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed;
@@ -25,15 +25,4 @@ public class Platform : MonoBehaviour
         }
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed*Time.deltaTime);
     }
-
-    private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.CompareTag("Player")){
-            other.transform.SetParent(transform);
-        }
-    }
-    private void OnCollisionExit2D(Collision2D other) {
-            if(other.gameObject.CompareTag("Player")){
-                other.transform.SetParent(null);
-            }
-        }
 }
