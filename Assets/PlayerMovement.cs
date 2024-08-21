@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     public CharacterController2D controller;
     float horizontalMove = 0f;
-    float runSpeed = 40f;
+    float runSpeed = 20f;
     bool isJumping = false, isCrouching = false;
 
     public Animator animator;

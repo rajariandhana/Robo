@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Rocket
   - Blade
+  - Spike
   layers:
   - Default
   - TransparentFX

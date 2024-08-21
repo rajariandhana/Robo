@@ -5,8 +5,8 @@ using UnityEngine;
 public class Moving : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed;
-    public int startingPoint;
+    public float speed=1f;
+    public int startingPoint=0;
     public Transform[] points;
     private int i;
     void Start()
