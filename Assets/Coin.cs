@@ -24,7 +24,7 @@ public class Coin : MonoBehaviour
         {
             GetComponent<Collider2D>().enabled = false;
             Debug.Log("Coin collected!");
-            CoinCounter.Instance.Plus();
+            GameManager.Instance.Plus();
             Destroy(gameObject);
         }
     }

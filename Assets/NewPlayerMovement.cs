@@ -22,6 +22,7 @@ public class NewPlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!GameManager.Instance.GetAlive()) return;
         move = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(move));
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
@@ -39,6 +40,9 @@ public class NewPlayerMovement : MonoBehaviour
                 animator.SetBool("IsJumping", false);
             // }
         }
+    }
+    public void Death(){
+        animator.SetFloat("Speed", 0);
     }
     // void OnCollisionExit2D(Collision2D other){
     //     if(other.gameObject.CompareTag("Ground")){
