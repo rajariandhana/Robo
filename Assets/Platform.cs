@@ -26,14 +26,17 @@ public class Platform : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed*Time.deltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
+        //  && transform.position.y<other.transform.position.y-0.5f
         if(other.gameObject.CompareTag("Player")){
-            other.transform.SetParent(transform);
+            other.gameObject.transform.SetParent(this.transform);
+            Rigidbody2D playerRb = other.gameObject.GetComponent<Rigidbody2D>();
+            playerRb.velocity = Vector2.zero;
         }
     }
-    private void OnCollisionExit2D(Collision2D other) {
-            if(other.gameObject.CompareTag("Player")){
-                other.transform.SetParent(null);
-            }
+    private void OnTriggerExit2D(Collider2D other) {
+        if(other.gameObject.CompareTag("Player")){
+            other.gameObject.transform.SetParent(null);
         }
+    }
 }
