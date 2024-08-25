@@ -22,8 +22,8 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GetComponent<Collider2D>().enabled = false;
-            Debug.Log("Coin collected!");
+            // GetComponent<Collider2D>().enabled = false;
+            // Debug.Log("Coin collected!");
             GameManager.Instance.Plus();
             Destroy(gameObject);
         }
