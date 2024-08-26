@@ -22,9 +22,9 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GetComponent<Collider2D>().enabled = false;
-            Debug.Log("Coin collected!");
-            CoinCounter.Instance.Plus();
+            // GetComponent<Collider2D>().enabled = false;
+            // Debug.Log("Coin collected!");
+            GameManager.Instance.Plus();
             Destroy(gameObject);
         }
     }
