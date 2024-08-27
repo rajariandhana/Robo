@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class NewPlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     private Rigidbody2D rb;
     private float move;
     public float speed=5;
     public float jump=10;
     private bool grounded;
     private Animator animator;
+    private bool m_FacingRight = true;
 
     void Start()
     {
@@ -19,11 +19,11 @@ public class NewPlayerMovement : MonoBehaviour
         grounded=true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(!GameManager.Instance.GetAlive()) return;
         move = Input.GetAxisRaw("Horizontal");
+        if((move > 0 && !m_FacingRight) || (move < 0 && m_FacingRight)) Flip();
         animator.SetFloat("Speed", Mathf.Abs(move));
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
         if(Input.GetButtonDown("Jump") && grounded){
@@ -41,8 +41,14 @@ public class NewPlayerMovement : MonoBehaviour
             // }
         }
     }
+    void Flip()
+	{
+		m_FacingRight = !m_FacingRight;
+		transform.Rotate(0f, 180f, 0f);
+	}
     public void Death(){
         animator.SetFloat("Speed", 0);
+        animator.enabled = false;
     }
     // void OnCollisionExit2D(Collision2D other){
     //     if(other.gameObject.CompareTag("Ground")){
